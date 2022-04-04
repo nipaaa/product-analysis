@@ -1,0 +1,17 @@
+h2{
+color: rgb(2, 2, 105); 
+font-weight: bolder;  
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.menu-bar{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    margin-right: 20px;
+ 
+
+}
