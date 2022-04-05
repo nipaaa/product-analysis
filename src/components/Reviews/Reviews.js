@@ -5,15 +5,20 @@ import Review from '../Review/Review';
 const Reviews = () => {
     const [reviews, setReviews] = useReviews();
     return (
-        <div className='row row-cols-1 row-cols-md-3 g-4'>
-           
-            {
-                reviews.map(review => <Review
-                key={review.id}
-                review={review}
-                ></Review>)
-            }
+        <div>
+                  <h1 className='my-3 text-center text-info'>Customer Reviews...</h1>
+
+                  <div className='row row-cols-1 row-cols-md-3 g-4 mx-5'>
+         
+         {
+             reviews.map(review => <Review
+             key={review.id}
+             review={review}
+             ></Review>)
+         }
+     </div>
         </div>
+       
     );
 };
 

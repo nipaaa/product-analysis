@@ -33,7 +33,7 @@ const Home = () => {
             </div>
            
             <div className='text-center my-3'>
-            <Link to="/reviews"><Button variant="outline-info">See More...</Button>{' '}</Link>
+            <Link to="/reviews"><Button variant="outline-info fw-bolder">See More...</Button>{' '}</Link>
             </div>
 
            </div>
