@@ -23,7 +23,9 @@ const Home = () => {
       </div>
 
            <div>
+           <h1 className='my-5 text-center text-info'>Customer Reviews...</h1>
             <div className='row row-cols-1 row-cols-md-3 g-4 mx-5'>
+          
             {
                 sliceReviews.map(review => <Review
                 key={review.id}

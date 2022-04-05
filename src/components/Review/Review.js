@@ -1,19 +1,20 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
 import './Review.css'
 
 const Review = (props) => {
     const {name, rating, review} = props.review;
     return (
         <div>
-            <div className="col ">
-                <div className="card review">
-                    <div className="card-body">
-                        <h5 className="card-title">Name: {name}</h5>
-                        <p className="card-text">{review}</p>
-                        <h6>Rating: {rating}</h6>
-                    </div>
-                </div>
-            </div>
+            <Card border="info" style={{ width: '23rem' }} className="review">
+                <Card.Header>Name: {name}</Card.Header>
+                <Card.Body>
+                    <Card.Text>
+                        {review}
+                    </Card.Text>
+                    <Card.Footer>Rating: {rating}</Card.Footer>
+                </Card.Body>
+            </Card>
         </div>
     );
 };

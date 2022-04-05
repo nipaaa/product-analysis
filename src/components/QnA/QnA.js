@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const QnA = () => {
     return (
-        <div className='container-fluid'>
+        <div className='mx-5'>
 
             <h2 className='text-center text-info my-5 fw-bolder'>Queries...</h2>
                 <Card>
